@@ -150,25 +150,41 @@ function Pill({ children }: { children: React.ReactNode }) {
   );
 }
 
-function SectionTitle({ eyebrow, title, subtitle }) {
+function SectionTitle({
+  eyebrow,
+  title,
+  subtitle,
+}: {
+  eyebrow?: string
+  title: string
+  subtitle?: string
+}) {
   return (
     <div className="mb-8">
       {eyebrow ? (
-        <div className="text-xs uppercase tracking-[0.2em] text-white/50">{eyebrow}</div>
+        <div className="text-xs uppercase tracking-[0.2em] text-white/50">
+          {eyebrow}
+        </div>
       ) : null}
+
       <h2 className="mt-2 text-2xl font-semibold text-white">{title}</h2>
-      {subtitle ? <p className="mt-2 text-white/70">{subtitle}</p> : null}
+
+      {subtitle ? (
+        <p className="mt-2 text-white/70">{subtitle}</p>
+      ) : null}
     </div>
-  );
+  )
 }
 
-function Card({ children }) {
+
+function Card({ children }: { children: React.ReactNode }) {
   return (
     <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
       {children}
     </div>
-  );
+  )
 }
+
 
 function IconLine({ icon: Icon, children }) {
   return (
