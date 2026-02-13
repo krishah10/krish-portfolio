@@ -185,14 +185,19 @@ function Card({ children }: { children: React.ReactNode }) {
   )
 }
 
-
-function IconLine({ icon: Icon, children }) {
+function IconLine({
+  icon: Icon,
+  children,
+}: {
+  icon: React.ElementType
+  children: React.ReactNode
+}) {
   return (
     <div className="flex items-center gap-2 text-sm text-white/80">
       <Icon className="h-4 w-4 text-white/70" />
       <span>{children}</span>
     </div>
-  );
+  )
 }
 
 export default function Page() {
