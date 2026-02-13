@@ -608,21 +608,7 @@ export default function Page() {
             </Card>
           </div>
 
-          <div className="mt-8 flex flex-col items-start justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 md:flex-row md:items-center">
-            <div>
-              <div className="text-lg font-semibold">Want this to look even more elite?</div>
-              <p className="mt-1 text-white/70">
-                Add 2–3 real artifacts (Excel dashboards, audit template, a short write-up). I can help you package them as
-                case studies.
-              </p>
-            </div>
-            <a
-              href="#projects"
-              className="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 text-sm font-medium text-[#070A12] hover:opacity-90"
-            >
-              Upgrade projects <ArrowRight className="h-4 w-4" />
-            </a>
-          </div>
+          
         </section>
       </main>
 
